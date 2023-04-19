@@ -25,19 +25,19 @@ para llevar a cabo sus responsabilidades incluyendo las reglas del juego.
         public int Ancho { get; set; }
         public int Altura { get; set;}
 
-        public Tablero(int ancho, int altura)
-        {
-            Ancho = ancho;
-            Altura = altura;
-        }
-        
         public Tablero(int ancho, int altura, string rutaArchivo)
         {
             Ancho = ancho;
             Altura = altura;
             this.rutaArchivo = rutaArchivo;
         }
-        
+
+        public Tablero(int ancho, int altura)
+        {
+            Ancho = ancho;
+            Altura = altura;
+        }
+
         public bool[,] GenerarTablero()
         {
             bool[,] board;
